@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora - Journal</title>
+    <link rel="stylesheet" href="Velora.css">
+</head>
+<body>
+
+    <!-- Header section -->
+    <header>
+        <div class="logo">
+            <img src="Velora logo.png" alt="Velora Logo" />
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Quizzes</a>
+            <a href="#">Daily Log</a>
+            <a href="#">Mental Training</a>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <h2>Welcome to Velora</h2>
+        <p>At Velora, we believe that mental wellness is a journey, and we're here to guide you every step of the way. Whether you're dealing with anxiety, stress, depression, or simply want to cultivate healthier mental habits, Velora provides tools and insights to help you feel supported and empowered.
+
+            Our platform offers personalized mental health insights, daily journaling, mindfulness exercises, and access to a supportive community. You can track your progress, explore tailored resources, and engage with techniques designed to nurture your well-being.
+            
+            Take control of your mental health with Velora, because you deserve to feel your best. Follow the instructions below to begin!
+            
+            </p>
+        <h2>Select Your Mental Health Concern</h2>
+
+        <!-- Dropdown list of mental health issues to select from -->
+        <label for="mental-health-issues">Choose an issue:</label>
+        <select id="mental-health-issues" name="mental-health-issues">
+            <option value="anxiety">Anxiety</option>
+            <option value="depression">Depression</option>
+            <option value="stress">Stress</option>
+            <option value="burnout">Burnout</option>
+            <option value="insomnia">Insomnia</option>
+        </select>
+
+        <!-- Text area for journaling -->
+        <br>
+        <div class="journal-section">
+            <label for="journal">Write Your Thoughts</label>
+            <br>
+            <textarea id="journal" name="journal" rows="10" cols="50" placeholder="Start journaling..."></textarea>
+        </div>
+
+        <!-- Submit button that leads to the solution/tasks page -->
+        <form action="solutions.html">
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+</body>
+</html>
