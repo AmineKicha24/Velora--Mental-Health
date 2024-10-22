@@ -1,0 +1,66 @@
+
+
+
+body {
+    background-color: #fefefe; 
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header*/
+header {
+    background-color: #3b5998;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content styling */
+.main-content {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.question p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Button styles */
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.option-btn {
+    background-color:rosybrown; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+
