@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Velora - Daily Log</title>
+    <link rel="stylesheet" href="daily-log.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Velora Logo" />
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Quizzes</a>
+            <a href="Daily Log.html">Daily Log</a>
+            <a href="#">Mental Training</a>
+        </nav>
+    </header>
+
+    <!-- Daily Log Content -->
+    <main>
+        <h2>Daily Log</h2>
+
+        <!-- Emotion Selector -->
+        <label for="emotion">How are you feeling today?</label>
+        <select id="emotion" name="emotion">
+            <option value="happy">Happy</option>
+            <option value="anxious">Anxious</option>
+            <option value="stressed">Stressed</option>
+            <option value="sad">Sad</option>
+            <option value="angry">Angry</option>
+            <option value="neutral">Neutral</option>
+        </select>
+
+        <!-- Activities Section -->
+        <div class="activities-section">
+            <label for="activities">What activities did you do today?</label>
+            <textarea id="activities" name="activities" rows="5" cols="50" placeholder="E.g., went for a walk, worked on a project, meditated..."></textarea>
+        </div>
+
+        <!-- Notes Section -->
+        <div class="notes-section">
+            <label for="notes">Any additional thoughts or reflections?</label>
+            <textarea id="notes" name="notes" rows="5" cols="50" placeholder="Write down any thoughts or reflections here..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <form action="log-summary.html">
+            <button type="submit">Submit Log</button>
+        </form>
+    </main>
+
+</body>
+</html>
