@@ -9,31 +9,74 @@ body {
 
 /* Header Section */
 header {
-    align-items: right;
-    background-color: #324C8F; /* Header background ccolor*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #375091; /* Header background */
+    padding: 20px;
+}
+
+header .logo img {
+    height: 50px;
 }
 
 nav a {
+    margin-left: 20px;
     color: #f4f4f9;
+    text-decoration: none;
+    font-weight: bold;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
 
 /* Main Content */
 main {
+    padding: 40px;
     text-align: center;
 }
 
 main h2 {
-    color: #324C8F;
+    color: #375091;
+    margin-bottom: 20px;
 }
 
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
 
+select {
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+}
 
+.journal-section {
+    margin-bottom: 20px;
+}
 
+textarea {
+    width: 80%;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
 button {
-    background-color: #324C8F;
+    padding: 10px 20px;
+    background-color: #375091;
     color: white;
-
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
+button:hover {
+    background-color: #4f6cb8;
+}
