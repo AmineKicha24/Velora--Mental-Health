@@ -1,15 +1,21 @@
 
 header {
-    background-color: #283593;
-    padding: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #375091; /* Header background */
+    padding: 20px;
+}
+
+header .logo img {
+    height: 50px;
 }
 
 nav a {
-    color: white;
+    margin-left: 20px;
+    color: #f4f4f9;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
+    font-weight: bold;
 }
 
 /* Main Content */
