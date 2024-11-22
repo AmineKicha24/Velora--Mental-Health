@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation | Velora</title>
+    <link rel="stylesheet" href="meditation.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Meditation Session</h1>
+        <p>Take a moment to breathe and relax. Follow the guide below for a peaceful meditation.</p>
+        <button id="startButton">Start Meditation</button>
+        <button id="pauseButton" style="display: none;">Pause</button>
+        <button id="resumeButton" style="display: none;">Resume</button>
+        <div class="breathing-guide">
+            <div class="circle"></div>
+            <p id="guideText">Get Ready...</p>
+        </div>
+        <audio id="meditationAudio" loop>
+            <source src="meditation-music-without-nature-sound-256142.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script src="meditation.js"></script>
+</body>
+</html>
+

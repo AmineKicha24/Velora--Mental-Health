@@ -1,0 +1,72 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #89f7fe, #66a6ff);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+button {
+    background-color: #66a6ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #558acb;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Breathing Guide */
+.breathing-guide {
+    margin-top: 20px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #66a6ff;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: breathe 8s infinite;
+}
+
+@keyframes breathe {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+#guideText {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
