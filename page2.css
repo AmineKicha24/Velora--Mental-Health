@@ -9,23 +9,26 @@ body {
 
 /* Header*/
 header {
-    background-color: #3b5998;
-    padding: 15px;
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #375091; 
+    padding: 20px;
 }
 
 header .logo img {
-    height: 40px;
+    height: 50px;
 }
 
 nav a {
-    color: white;
-    margin: 0 10px;
+    margin-left: 20px;
+    color: #f4f4f9;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* Main content styling */

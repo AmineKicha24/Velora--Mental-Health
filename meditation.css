@@ -1,72 +1,74 @@
-/* Global Styles */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #89f7fe, #66a6ff);
+    background-color: #e8f5e9;
     color: #333;
+}
+header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    background-color: #375091; 
+    padding: 20px;
 }
 
-/* Container */
+header .logo img {
+    height: 50px;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #f4f4f9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 .container {
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 50px;
 }
 
-/* Buttons */
+h1 {
+    color: #2e7d32;
+}
+
 button {
-    background-color: #66a6ff;
-    color: white;
-    border: none;
+    margin: 10px;
     padding: 10px 20px;
     font-size: 16px;
-    margin: 10px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #558acb;
+#startButton {
+    background-color: #2e7d32;
+    color: white;
 }
 
-button:active {
-    transform: scale(0.95);
+#pauseButton, #resumeButton {
+    background-color: #d32f2f;
+    color: white;
 }
 
-/* Breathing Guide */
 .breathing-guide {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .circle {
     width: 100px;
     height: 100px;
-    background-color: #66a6ff;
+    margin: 20px auto;
     border-radius: 50%;
-    margin: 0 auto;
-    animation: breathe 8s infinite;
-}
-
-@keyframes breathe {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.5);
-    }
+    background-color: #81c784;
 }
 
 #guideText {
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #555;
+    font-size: 20px;
+    color: #2e7d32;
 }

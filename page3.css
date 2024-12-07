@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #375091; /* Header background */
+    background-color: #375091; 
     padding: 20px;
 }
 
@@ -23,6 +23,10 @@ nav a {
     color: #f4f4f9;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* Main Content */
