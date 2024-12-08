@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>login page</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Velora</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-
     <header>
         <div class="logo">
             <img src="Velora logo.png" alt="Velora Logo">
@@ -20,29 +19,24 @@
             <a href="meditation.html">Meditation</a>
         </nav>
     </header>
-    
 
-<form action="/server"></form>
+    <main class="login-container">
+        <h2>Login</h2>
+        <form action="dashboard.html" method="post">
+            <label for="username">Username or Email</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <button type="submit" class="login-button">Login</button>
+        </form>
 
-<div class="container">
-    <h1> Login </h1>
+        <div class="login-links">
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            <p><a href="forgot-password.html">Forgot Password?</a></p>
+        </div>
+    </main>
 
-
-<div class="input-box">
-<input type="text" placeholder="Username"></div>
-
-<div class="input-box">
-    <input type="password" placeholder="Password">
-</div>
-
-<div class="remember">
-    <label><input type="checkbox"> Remember me </label>
-    <a href="#"> Forgot password? </a>
-</div>
-
-<button type="submit" class="btn"> Log in </button>
-
-<div class="register">
-    <p> Don't have an account? <a href="#"> Register here</a></p>
-</div>
-</div>
+</body>
+</html>

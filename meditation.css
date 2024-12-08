@@ -27,7 +27,16 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+header nav a[href="login page.html"] {
+    background-color: #ffffff; /* White background */
+    color: #4CAF50; /* Primary Color Text */
+    font-weight: bold;
+}
 
+header nav a[href="login page.html"]:hover {
+    background-color: #d4edda; /* Lightened Green */
+    color: #333; /* Darker text on hover */
+}
 .container {
     text-align: center;
     padding: 50px;
@@ -36,7 +45,9 @@ nav a:hover {
 h1 {
     color: #2e7d32;
 }
-
+button:hover {
+    text-decoration: underline;
+}
 button {
     margin: 10px;
     padding: 10px 20px;

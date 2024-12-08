@@ -9,7 +9,6 @@
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
         <div class="logo">
             <img src="Velora logo.png" alt="Velora Logo">
@@ -20,16 +19,13 @@
             <a href="Daily Log.html">Daily Log</a>
             <a href="mental-training.html">Mental Training</a>
             <a href="meditation.html">Meditation</a>
+            <a href="login page.html">Login</a>
         </nav>
     </header>
-    
 
-    <!-- Daily Log Content -->
     <main>
-        <script src="tip4mood.js"></script>
         <h2>Daily Log</h2>
 
-        <!-- Emotion Selector -->
         <label for="emotion">How are you feeling today?</label>
         <select id="emotion" name="emotion">
             <option value="happy">Happy</option>
@@ -40,23 +36,21 @@
             <option value="neutral">Neutral</option>
         </select>
 
-        <!-- Activities Section -->
+        <div id="tips-section" style="margin-top: 20px; font-weight: bold;"></div>
+
         <div class="activities-section">
             <label for="activities">What activities did you do today?</label>
             <textarea id="activities" name="activities" rows="5" cols="50" placeholder="E.g., went for a walk, worked on a project, meditated..."></textarea>
         </div>
 
-        <!-- Notes Section -->
         <div class="notes-section">
             <label for="notes">Any additional thoughts or reflections?</label>
             <textarea id="notes" name="notes" rows="5" cols="50" placeholder="Write down any thoughts or reflections here..."></textarea>
         </div>
 
-        <!-- Submit Button -->
-        <form action="log-summary.html">
-            <button type="submit">Submit Log</button>
-        </form>
+        <button id="submitLog">Submit Log</button>
     </main>
 
+    <script src="tip4mood.js"></script>
 </body>
 </html>

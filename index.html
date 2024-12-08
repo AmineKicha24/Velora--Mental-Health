@@ -16,21 +16,38 @@
         <a href="Daily Log.html">Daily Log</a>
         <a href="mental-training.html">Mental Training</a>
         <a href="meditation.html">Meditation</a>
+        <a href="login page.html">Login</a>
     </nav>
 </header>
+<main>
+    
+    <h2>Quick Quiz: How Are You Feeling?</h2>
+    <label for="quiz1">Are you feeling energetic today?</label>
+    <select id="quiz1" name="quiz1">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
 
-    <section class="main-content">
-        <div class="question">
-            <p>What brings you to Velora?</p>
-        </div>
-        <div class="options">
-            <button class="option-btn">Work-life balance</button>
-            <button class="option-btn">Self esteem & confidence</button>
-            <button class="option-btn">Time management</button>
-            <button class="option-btn">Emotional regulation</button>
-            <button class="option-btn">Decision-making</button>
-        </div>
-    </section>
+    <label for="quiz2">Are you feeling relaxed today?</label>
+    <select id="quiz2" name="quiz2">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <label for="quiz3">Do you feel positive about your day?</label>
+    <select id="quiz3" name="quiz3">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <button id="submitQuiz">Submit Quiz</button>
+    <div id="quizResult" style="display:none;">
+        <h3>Your Result:</h3>
+        <p id="quizMessage"></p>
+    </div>
+<script src="quizresult.js"></script>
+</main>
+
 
     
 </body>
